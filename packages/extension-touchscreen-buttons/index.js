@@ -1,15 +1,15 @@
-var jsPsychMobileButtonsExtension = (function (jspsych) {
+var jsPsychTouchScreenButtonsExtension = (function (jspsych) {
         "use strict";
 
         /**
-         * **MOBILE-BUTTONS**
+         * **Touchscreen-BUTTONS**
          *
          * Create an overlay of touch buttons to use jsPsych on mobile devices.
          *
          * @author Younes Strittmatter
          * @see {@link https://DOCUMENTATION_URL DOCUMENTATION LINK TEXT}
          */
-        class jsPsychMobileButtonsExtension {
+        class jsPsychTouchScreenButtonsExtension {
             constructor(jsPsych) {
                 this.jsPsych = jsPsych;
             }
@@ -132,11 +132,11 @@ var jsPsychMobileButtonsExtension = (function (jspsych) {
             }
         }
 
-        jsPsychMobileButtonsExtension.info = {
+        jsPsychTouchScreenButtonsExtension.info = {
             name: "mobile-buttons",
         };
 
-        return jsPsychMobileButtonsExtension;
+        return jsPsychTouchScreenButtonsExtension;
     }
 )
 (jsPsychModule);

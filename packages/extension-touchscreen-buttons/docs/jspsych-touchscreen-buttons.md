@@ -1,4 +1,4 @@
-# jspsych-mobile-buttons extension
+# jspsych-touchscreen-buttons extension
 
 This extension displays touch buttons allows the subject to respond to stimuli via touchscreen on mobile devices. The touch button send key press events so that all jsPsych plugins that use keyboard input are compatible.
 
@@ -20,7 +20,7 @@ In the initialisation stage of the extension you can initialize layouts of butto
 ```javascript
 let jsPsych = initJsPsych({
         extensions: [{
-            type: jsPsychMobileButtonsExtension, params: [
+            type: jsPsychTouchScreenButtonsExtension, params: [
                 {
                     middle: {key: 'm'}
                 }, // layout 0
@@ -65,7 +65,7 @@ The buttons can be initialised with the following parameters
 ```javascript
 let jsPsych = initJsPsych({
         extensions: [{
-            type: jsPsychMobileButtonsExtension, params: [
+            type: jsPsychTouchScreenButtonsExtension, params: [
                 {
                     middle: {
                         key: 'm',
@@ -91,7 +91,7 @@ let trial = {
         correct_choice: ['r'],
         extensions: [
             {
-                type: jsPsychMobileButtonsExtension, params: {layout: 1}
+                type: jsPsychTouchScreenButtonsExtension, params: {layout: 1}
             }
         ]
     };

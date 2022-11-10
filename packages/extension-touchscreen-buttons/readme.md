@@ -16,11 +16,11 @@ This extension displays touch buttons allows the subject to respond to stimuli v
 ### Via NPM
 
 ```
-npm install @jspsych-contrib/extension-mobile-buttons
+npm install @jspsych-contrib/extension-touchscreen-buttons
 ```
 
 ```js
-import jsPsychRok from '@jspsych-contrib/extension-mobile-buttons';
+import jsPsychRok from '@jspsych-contrib/extension-touchscreen-buttons';
 ```
 
 ## Compatibility
@@ -29,7 +29,7 @@ jsPsych v7.0.
 
 ## Documentation
 
-See [documentation](docs/jspsych-mobile-buttons.md)
+See [documentation](docs/jspsych-touchscreen-buttons.md)
 
 ## Author / Citation
 

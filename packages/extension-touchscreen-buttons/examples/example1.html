@@ -10,12 +10,12 @@
     <script src="https://unpkg.com/@jspsych/plugin-fullscreen@1.1.0"></script>
     <script src="../index.js"></script>
     <link href="https://unpkg.com/jspsych@7.2.1/css/jspsych.css" rel="stylesheet" type="text/css"/>
-    <link href="../css/extension-mobile-buttons.css" rel="stylesheet" type="text/css">
+    <link href="../css/extension-touchscreen-buttons.css" rel="stylesheet" type="text/css">
 </head>
 <script>
     let jsPsych = initJsPsych({
         extensions: [{
-            type: jsPsychMobileButtonsExtension, params: [
+            type: jsPsychTouchScreenButtonsExtension, params: [
                 {
                     middle: {key: 'm'} // middle key that triggers m press on keyboard
                 }, // layout 0
@@ -47,7 +47,7 @@
         choices: ['m'], // the key defined above
         stimulus: 'press bellow',
         extensions: [{
-            type: jsPsychMobileButtonsExtension // defaults to layout 0
+            type: jsPsychTouchScreenButtonsExtension // defaults to layout 0
         }]
     };
 
@@ -59,7 +59,7 @@
         correct_choice: ['r'],
         extensions: [
             {
-                type: jsPsychMobileButtonsExtension, params: {layout: 1}
+                type: jsPsychTouchScreenButtonsExtension, params: {layout: 1}
             }
         ]
     };
@@ -71,7 +71,7 @@
         correct_choice: ['b'],
         stimulus: '<div style="color: blue; font-size: 40pt; font-family: sans-serif; font-weight: bold">YELLOW</div>',
         extensions: [{
-            type: jsPsychMobileButtonsExtension, params: {layout: 2}
+            type: jsPsychTouchScreenButtonsExtension, params: {layout: 2}
         }]
     };
 
@@ -82,7 +82,7 @@
         correct_choice: ['m'],
         stimulus: 'press to end',
         extensions: [{
-            type: jsPsychMobileButtonsExtension, params: {layout: 3}
+            type: jsPsychTouchScreenButtonsExtension, params: {layout: 3}
         }],
         trial_duration: 0
     }
