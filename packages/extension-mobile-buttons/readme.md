@@ -1,4 +1,4 @@
-# rdk extension
+# touchscreen-button extension
 
 ## Overview
 
